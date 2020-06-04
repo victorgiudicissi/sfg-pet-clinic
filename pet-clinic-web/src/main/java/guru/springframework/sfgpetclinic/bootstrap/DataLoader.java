@@ -27,7 +27,6 @@ public class DataLoader implements CommandLineRunner {
         log.info("Starting bootstrap data");
 
         Owner owner1 = new Owner();
-        owner1.setId(1L);
         owner1.setFirstName("Victor");
         owner1.setLastName("Hugo");
 
@@ -37,19 +36,17 @@ public class DataLoader implements CommandLineRunner {
         owner2.setFirstName("Laura");
         owner2.setLastName("Beatriz");
 
-        ownerService.save(owner1);
+        ownerService.save(owner2);
 
         log.info("Created owners");
 
         Vet vet1 = new Vet();
-        vet1.setId(1L);
         vet1.setFirstName("Sam");
         vet1.setLastName("Vetson");
 
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(2L);
         vet2.setFirstName("Vet");
         vet2.setLastName("Sam");
 
